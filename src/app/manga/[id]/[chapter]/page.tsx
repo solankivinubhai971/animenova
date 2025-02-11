@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import Popunder from '@/ads/Popunder';
 import SocialBar from '@/ads/SocialBar';
+import NativeBannerAd from '@/ads/NativeBannerAd';
 
 interface ChapterResponse {
   message: string;
@@ -112,8 +113,7 @@ export default function Page() {
 
   return (
     <>
-    <Popunder />
-    <SocialBar />
+    
     <div className="min-h-screen bg-black custom-scrollbar">
       {/* Fixed Navigation Bar */}
       <div className="fixed top-0 left-0 right-0 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-gray-800/50 z-[100] -mt-1">
@@ -164,6 +164,7 @@ export default function Page() {
                 href={`/manga/${params.id}/${data.results.nextChapterId}`}
                 className="flex items-center gap-1 sm:gap-2 text-white/90 hover:text-white px-2 sm:px-4 py-2 rounded-lg hover:bg-gray-800/50 transition-colors"
               >
+                
                 <span className="text-sm sm:text-base font-medium hidden xs:inline">Next</span>
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -242,9 +243,14 @@ export default function Page() {
       </AnimatePresence>
 
       {/* Content container - Removed default margin and adjusted padding */}
+      <>
+      <Popunder />
+      <SocialBar />
+      <NativeBannerAd />
       <div className="max-w-2xl mx-auto -mt-1">
         {data.results.images.map((image, index) => (
           <div key={index} className="relative w-full">
+          
             <img
               src={getProxyImageUrl(image.image, data.referrer)}
               alt={image.title}
@@ -254,6 +260,7 @@ export default function Page() {
           </div>
         ))}
       </div>
+      </>
 
       {/* Scroll to top button - Adjusted z-index */}
       <AnimatePresence>
