@@ -1,0 +1,35 @@
+# https://mangaclan.online robots.txt
+
+# Allow all crawlers
+User-agent: *
+
+# Allow crawling of all content
+Allow: /
+Allow: /manga/
+Allow: /popular
+Allow: /latest
+Allow: /newest
+Allow: /completed
+Allow: /search
+
+# Prevent crawling of API routes
+Disallow: /api/
+
+# Add reasonable crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://mangaclan.online/sitemap.xml
+
+# Additional crawler specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1

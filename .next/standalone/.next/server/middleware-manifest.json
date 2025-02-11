@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/proxy/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/proxy/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/proxy/route.js"
+      ],
+      "name": "app/api/proxy/route",
+      "page": "/api/proxy/route",
+      "matchers": [
+        {
+          "regexp": "^/api/proxy$",
+          "originalSource": "/api/proxy"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "WvEQo3as0z1-pPRo83Kr6",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "7JuutQRMcgi7WfhQpbGl2a8eMyxtdroqGbHIaHPHBNg=",
+        "__NEXT_PREVIEW_MODE_ID": "c7f555f8f232f1654b1e0cf286353564",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "8ea69854df7424e1c4527386e35ec7132c429d9e2a1d3ac18e42e9812fe95bd5",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "ad99eb7527681e53937fefc956652b25f157d3380121f25c36ca77df0624d536"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
