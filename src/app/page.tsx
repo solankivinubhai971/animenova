@@ -5,6 +5,7 @@ import PopularMangaList from '@/components/PopularMangaList';
 import HeroSection from '@/components/HeroSection';
 import Link from 'next/link';
 import Popunder from '../ads/Popunder';
+import GoogleAnalytics from '@/googletag';
 
 export default async function Home() {
   const mangas = await getMangaList(1);
@@ -12,6 +13,7 @@ export default async function Home() {
   
   return (
     <>
+    <GoogleAnalytics />
     <Popunder />
     <main className="min-h-screen bg-gray-900">
       <HeroSection mangas={popularMangas} />
