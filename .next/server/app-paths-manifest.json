@@ -4,9 +4,9 @@
   "/manga/[id]/[chapter]/page": "app/manga/[id]/[chapter]/page.js",
   "/manga/[id]/page": "app/manga/[id]/page.js",
   "/page": "app/page.js",
+  "/newest/page": "app/newest/page.js",
   "/completed/page": "app/completed/page.js",
   "/latest/page": "app/latest/page.js",
-  "/newest/page": "app/newest/page.js",
   "/popular/page": "app/popular/page.js",
   "/search/page": "app/search/page.js",
   "/api/proxy/route": "app/api/proxy/route.js"

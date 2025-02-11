@@ -4,12 +4,15 @@ import { Manga } from '@/types/manga';
 import PopularMangaList from '@/components/PopularMangaList';
 import HeroSection from '@/components/HeroSection';
 import Link from 'next/link';
+import Popunder from '../ads/Popunder';
 
 export default async function Home() {
   const mangas = await getMangaList(1);
   const popularMangas = await fetch('https://mangabat-beta.vercel.app/api/manga/popular-this-month').then(res => res.json());
   
   return (
+    <>
+    <Popunder />
     <main className="min-h-screen bg-gray-900">
       <HeroSection mangas={popularMangas} />
 
@@ -62,5 +65,6 @@ export default async function Home() {
         </div>
       </div>
     </main>
+    </>
   );
 }
