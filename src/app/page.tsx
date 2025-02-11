@@ -6,6 +6,8 @@ import HeroSection from '@/components/HeroSection';
 import Link from 'next/link';
 import Popunder from '../ads/Popunder';
 import GoogleAnalytics from '@/googletag';
+import NativeBannerAd from '@/ads/NativeBannerAd';
+import SocialBar from '@/ads/SocialBar';
 
 export default async function Home() {
   const mangas = await getMangaList(1);
@@ -15,9 +17,10 @@ export default async function Home() {
     <>
     <GoogleAnalytics />
     <Popunder />
+    <SocialBar />
     <main className="min-h-screen bg-gray-900">
       <HeroSection mangas={popularMangas} />
-
+      <NativeBannerAd />
       {/* Main Content */}
       <div className="container mx-auto px-3 xs:px-4 py-6 sm:py-8">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">

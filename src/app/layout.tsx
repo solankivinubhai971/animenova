@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'manga chapters', 'manga site', 'manga clan', 'english manga',
     'action manga', 'romance manga', 'fantasy manga', 'slice of life manga',
     'manga community', 'manga library', 'high quality manga', 'manga series',
-    'best manga site', 'manga reading', 'free manga reading'
+    'best manga site', 'manga reading', 'free manga reading', 'animenova'
   ],
   authors: [{ name: 'Animenova' }],
   creator: 'Animenova',

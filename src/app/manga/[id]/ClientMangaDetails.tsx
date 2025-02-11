@@ -8,6 +8,8 @@ import { IoCopyOutline } from 'react-icons/io5';
 import { useBookmarks } from '@/contexts/BookmarkContext';
 import { BsBookmarkPlus, BsBookmarkCheckFill } from 'react-icons/bs';
 import { usePathname } from 'next/navigation';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 interface MangaProps {
   manga: {

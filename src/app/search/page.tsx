@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import MangaGrid from '@/components/MangaGrid';
 import { Manga } from '@/types/manga';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 export const metadata: Metadata = {
   title: 'Search Results - Animenova',
@@ -41,6 +43,9 @@ export default async function SearchPage({ searchParams }: PageProps) {
   const { manga } = await searchManga(query);
 
   return (
+    <>
+    <Popunder />
+    <SocialBar />
     <main className="min-h-screen bg-gray-900 py-8">
       <div className="container mx-auto px-4">
         <div className="mb-6">
@@ -71,5 +76,6 @@ export default async function SearchPage({ searchParams }: PageProps) {
         )}
       </div>
     </main>
+    </>
   );
 } 

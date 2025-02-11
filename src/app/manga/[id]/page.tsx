@@ -4,6 +4,8 @@ import ClientMangaDetails from './ClientMangaDetails';
 import PopularMangaListClient from '@/components/PopularMangaListClient';
 import Link from 'next/link';
 import { generateMetadata } from './metadata';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 async function getMangaDetails(id: string) {
   try {
@@ -44,6 +46,9 @@ export default async function MangaDetailsPage({ params }: PageProps) {
   }
 
   return (
+    <>
+    <Popunder />
+    <SocialBar />
     <main className="min-h-screen bg-gray-900 py-4 sm:py-6 lg:py-8">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-6">
@@ -64,6 +69,7 @@ export default async function MangaDetailsPage({ params }: PageProps) {
         </div>
       </div>
     </main>
+    </>
   );
 }
 

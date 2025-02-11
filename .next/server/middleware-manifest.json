@@ -1,6 +1,33 @@
 {
   "version": 3,
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/api/proxy/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/proxy/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/proxy/route.js"
+      ],
+      "name": "app/api/proxy/route",
+      "page": "/api/proxy/route",
+      "matchers": [
+        {
+          "regexp": "^/api/proxy$",
+          "originalSource": "/api/proxy"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "/ZuwBPW25swXQEQ9nEVZv7TNs+T93IaftCd81w/UZ+w="
+      }
+    }
+  },
   "sortedMiddleware": []
 }

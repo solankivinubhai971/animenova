@@ -2,11 +2,16 @@
 
 import { useBookmarks } from '@/contexts/BookmarkContext';
 import BookmarkMangaCard from '@/components/BookmarkMangaCard';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 export default function BookmarksPage() {
   const { bookmarks } = useBookmarks();
 
   return (
+    <>
+    <Popunder />
+    <SocialBar />
     <main className="min-h-screen bg-gray-900 py-8">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-6">
@@ -46,5 +51,6 @@ export default function BookmarksPage() {
         )}
       </div>
     </main>
+    </>
   );
 } 

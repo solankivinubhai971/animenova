@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 interface ChapterResponse {
   message: string;
@@ -109,6 +111,9 @@ export default function Page() {
   }
 
   return (
+    <>
+    <Popunder />
+    <SocialBar />
     <div className="min-h-screen bg-black custom-scrollbar">
       {/* Fixed Navigation Bar */}
       <div className="fixed top-0 left-0 right-0 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-gray-800/50 z-[100] -mt-1">
@@ -268,5 +273,6 @@ export default function Page() {
         )}
       </AnimatePresence>
     </div>
+    </>
   );
 }

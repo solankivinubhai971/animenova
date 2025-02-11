@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import MangaGrid from '@/components/MangaGrid';
 import Pagination from '@/components/Pagination';
 import { Manga } from '@/types/manga';
+import Popunder from '@/ads/Popunder';
+import SocialBar from '@/ads/SocialBar';
 
 export const metadata: Metadata = {
   title: 'Completed Manga - Animenova',
@@ -45,6 +47,9 @@ export default async function CompletedPage({ searchParams }: PageProps) {
   const { manga, totalPages } = await getCompletedManga(page);
 
   return (
+    <>
+    <Popunder />
+    <SocialBar />
     <main className="min-h-screen bg-gray-900 py-8">
       <div className="container mx-auto px-4">
         <h1 className="text-2xl font-bold text-white mb-6">Completed Manga</h1>
@@ -56,5 +61,6 @@ export default async function CompletedPage({ searchParams }: PageProps) {
         />
       </div>
     </main>
+    </>
   );
 } 
