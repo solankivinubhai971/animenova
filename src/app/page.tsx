@@ -5,9 +5,12 @@ import PopularMangaList from '@/components/PopularMangaList';
 import HeroSection from '@/components/HeroSection';
 import Link from 'next/link';
 import Popunder from '../ads/Popunder';
+<<<<<<< HEAD
 import GoogleAnalytics from '@/googletag';
 import NativeBannerAd from '@/ads/NativeBannerAd';
 import SocialBar from '@/ads/SocialBar';
+=======
+>>>>>>> d78ab8158a9c7d208b33d3b45d3577db2fb543fc
 
 export default async function Home() {
   const mangas = await getMangaList(1);
@@ -15,9 +18,13 @@ export default async function Home() {
   
   return (
     <>
+<<<<<<< HEAD
     <GoogleAnalytics />
     <Popunder />
     <SocialBar />
+=======
+    <Popunder />
+>>>>>>> d78ab8158a9c7d208b33d3b45d3577db2fb543fc
     <main className="min-h-screen bg-gray-900">
       <HeroSection mangas={popularMangas} />
       <NativeBannerAd />
