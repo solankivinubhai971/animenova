@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Animenova - Best Free Manga Reading Platform Online',
     description: 'Explore a vast library of manga across all genres. High-quality visuals, regular updates, and a seamless reading experience await you at Animenova. Start reading manga for free today!',
-    creator: '@mangaclan',
+    creator: '@animenova',
     images: ['/twitter-image.jpg'],
   },
   robots: {
