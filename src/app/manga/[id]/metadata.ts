@@ -73,7 +73,7 @@ export async function generateMetadata(
   const title = `${manga.title} - Read Online Free | Chapter 1-${latestChapter.id} | Animenova`;
 
   return {
-    metadataBase: new URL('https://mangaclan.online'),
+    metadataBase: new URL('https://animenovaxyz.vercel.app'),
     title: {
       absolute: `${manga.title} - Read Online Free | Chapter 1-${latestChapter.id} | MangaClan`,
       template: '%s | MangaClan',

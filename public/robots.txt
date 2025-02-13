@@ -1,4 +1,4 @@
-# https://mangaclan.online robots.txt
+# https://animenovaxyz.vercel.app robots.txt
 
 # Allow all crawlers
 User-agent: *
@@ -19,7 +19,7 @@ Disallow: /api/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://mangaclan.online/sitemap.xml
+Sitemap: https://animenovaxyz.vercel.app/sitemap.xml
 
 # Additional crawler specific rules
 User-agent: Googlebot

@@ -10,7 +10,7 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mangaclan.online'),
+  metadataBase: new URL('https://animenovaxyz.vercel.app'),
   title: {
     default: 'Animenova - Read Manga Online Free | Best Manga Reading Experience',
     template: '%s | Animenova - Free Manga Reading'
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mangaclan.online',
+    url: 'https://animenovaxyz.vercel.app',
     siteName: 'Animenova',
     title: 'Animenova - Best Free Manga Reading Platform Online',
     description: 'Animenova is your go-to platform for reading manga online. Explore a vast library of manga across all genres, from action and romance to fantasy and slice-of-life. With a user-friendly design, high-quality visuals, and regular updates, MangaClan offers a seamless and immersive reading experience. Join the community, discover your favorite series, and dive into the world of manga today!',
