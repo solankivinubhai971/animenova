@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: 'Animenova - Read Manga Online Free | Best Manga Reading Experience',
     template: '%s | Animenova - Free Manga Reading'
   },
-  description: 'Animenova is your go-to platform for reading manga online. Explore a vast library of manga across all genres, from action and romance to fantasy and slice-of-life. With a user-friendly design, high-quality visuals, and regular updates, MangaClan offers a seamless and immersive reading experience. Join the community, discover your favorite series, and dive into the world of manga today!',
+  description: 'Animenova is your go-to platform for reading manga online. Explore a vast library of manga across all genres, from action and romance to fantasy and slice-of-life. With a user-friendly design, high-quality visuals, and regular updates, AnimeNova offers a seamless and immersive reading experience. Join the community, discover your favorite series, and dive into the world of manga today!',
   keywords: [
     'manga', 'read manga', 'manga online', 'free manga', 'latest manga',
     'manga scans', 'manga updates', 'popular manga', 'manga reader',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     url: 'https://animenovaxyz.vercel.app',
     siteName: 'Animenova',
     title: 'Animenova - Best Free Manga Reading Platform Online',
-    description: 'Animenova is your go-to platform for reading manga online. Explore a vast library of manga across all genres, from action and romance to fantasy and slice-of-life. With a user-friendly design, high-quality visuals, and regular updates, MangaClan offers a seamless and immersive reading experience. Join the community, discover your favorite series, and dive into the world of manga today!',
+    description: 'Animenova is your go-to platform for reading manga online. Explore a vast library of manga across all genres, from action and romance to fantasy and slice-of-life. With a user-friendly design, high-quality visuals, and regular updates, AnimeNova offers a seamless and immersive reading experience. Join the community, discover your favorite series, and dive into the world of manga today!',
     images: [
       {
         url: '/og-image.jpg',

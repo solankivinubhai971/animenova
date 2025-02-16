@@ -53,8 +53,8 @@ export async function generateMetadata(
   
   if (!manga) {
     return { 
-      title: 'Manga Not Found | MangaClan',
-      description: 'The requested manga could not be found. Browse our vast collection of other manga series at MangaClan.',
+      title: 'Manga Not Found | AnimeNova',
+      description: 'The requested manga could not be found. Browse our vast collection of other manga series at AnimeNova.',
     };
   }
 
@@ -75,8 +75,8 @@ export async function generateMetadata(
   return {
     metadataBase: new URL('https://animenovaxyz.vercel.app'),
     title: {
-      absolute: `${manga.title} - Read Online Free | Chapter 1-${latestChapter.id} | MangaClan`,
-      template: '%s | MangaClan',
+      absolute: `${manga.title} - Read Online Free | Chapter 1-${latestChapter.id} | AnimeNova`,
+      template: '%s | AnimeNova',
       default: manga.title,
     },
     description: description,
